@@ -2,9 +2,8 @@
 
 terraform {
   backend "s3" {
-    bucket       = "zen-pharma-terraform-state-dpp-2026-us-east-1"  # Replace with your S3 bucket name
-    key          = "envs/dev/terraform.tfstate"
-    region       = "us-east-1"
+    bucket = "zen-pharma-terraform-state-chandika-s"
+    key    = "envs/dev/terraform.tfstate"
     encrypt      = true
     use_lockfile = true   # S3 native locking
   }
